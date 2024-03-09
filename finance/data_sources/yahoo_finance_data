@@ -1,0 +1,21 @@
+import yfinance as yf
+import matplotlib.pyplot as plt
+
+def get_historical_data(ticker, start_date, end_date):
+    return yf.download(ticker, start=start_date, end=end_date)
+
+def get_ticker_info(ticker):
+    return yf.Ticker(ticker)
+
+if __name__ == "__main__":
+    ticker = "AAPL"
+    start_date = "2024-01-01"
+    end_date = "2024-03-08"
+    data = get_historical_data(ticker, start_date, end_date)
+    # print(data.head())
+
+    # print(get_ticker_info("AAPL").info)
+
+    data["Close"].plot()
+    plt.title("AAPL Stock Price")
+    plt.show()

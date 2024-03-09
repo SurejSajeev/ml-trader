@@ -1,0 +1,16 @@
+import numpy as np
+import pandas as pd
+
+# euclidean norm
+def euclidean_norm(v):
+    """
+    Calculate the Euclidean norm of a vector.
+
+    Parameters:
+    v (numpy.ndarray): The input vector.
+
+    Returns:
+    float: The Euclidean norm of the vector.
+    """
+    x = np.array(v)
+    np.linalg.norm(x, 2)
