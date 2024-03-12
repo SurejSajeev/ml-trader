@@ -1,0 +1,15 @@
+README.md
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/top_level.txt
+src/__init__.py
+src/finance/__init__.py
+src/finance/data_sources/__init__.py
+src/finance/data_sources/eikon_finance_data.py
+src/finance/data_sources/quandl_finance_data.py
+src/main/__init__.py
+src/main/trigger_main.py
+src/util/__init__.py
+src/util/config_util.py

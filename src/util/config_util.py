@@ -3,8 +3,9 @@ import os
 from os.path import dirname, abspath
 
 def get_config():
-    FILE_DIR = abspath((dirname(__file__)))
-    CONFIG_FILE = os.path.join(FILE_DIR, 'config', 'resources.ini')
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+    parent_directory = os.path.dirname(current_directory)
+    CONFIG_FILE = os.path.join(parent_directory, 'config', 'resources.ini')
     config = configparser.ConfigParser()
     config.read(CONFIG_FILE)
     return config
