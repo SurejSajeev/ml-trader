@@ -11,6 +11,8 @@ matplotlib = "*"
 scikit-learn = "*"
 scipy = "*"
 yfinance = "*"
+configparser = "*"
+quandl = "*"
 
 [dev-packages]
 
