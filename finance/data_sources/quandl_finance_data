@@ -17,11 +17,11 @@ def get_quandl_data(dataset, start_date, end_date):
     return qdl_data
 
 if __name__ == "__main__":
-    dataset = "WIKI/AAPL"
-    start_date = "2024-01-01"
-    end_date = "2024-03-12"
-    data = get_quandl_data(dataset, start_date, end_date)
-    print(data.head())
+    # dataset = "WIKI/AAPL"
+    # start_date = "2024-01-01"
+    # end_date = "2024-03-12"
+    # data = get_quandl_data(dataset, start_date, end_date)
+    # print(data.head())
 
     dataset = "BCHAIN/MKPRU"
     start_date = "2024-01-01"
