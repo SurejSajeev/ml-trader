@@ -13,6 +13,7 @@ scipy = "*"
 yfinance = "*"
 configparser = "*"
 quandl = "*"
+eikon = "*"
 
 [dev-packages]
 

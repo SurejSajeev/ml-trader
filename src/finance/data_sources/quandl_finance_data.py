@@ -1,15 +1,8 @@
-import configparser
 import quandl as qdl
-import os
-from os.path import dirname, abspath
-
-FILE_DIR = abspath(dirname(dirname(dirname(__file__))))
-CONFIG_FILE = os.path.join(FILE_DIR, 'config', 'resources.ini')
-config = configparser.ConfigParser()
-config.read(CONFIG_FILE)
+from util.config_util import get_config
 
 def get_quandl_api_key():                
-    return config['quandl']['api_key']
+    return get_config()['quandl']['api_key']
 
 def get_quandl_data(dataset, start_date, end_date):
     qdl.ApiConfig.api_key = get_quandl_api_key()
